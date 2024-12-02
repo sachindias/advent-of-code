@@ -15,7 +15,7 @@ public class Program
         */
         
         //Day 2
-        D2_Tasks.Task1();
-        
+        var LineArrays = D2_Tasks.Task1();
+        D2_Tasks.Task2(LineArrays);
     }
 }
