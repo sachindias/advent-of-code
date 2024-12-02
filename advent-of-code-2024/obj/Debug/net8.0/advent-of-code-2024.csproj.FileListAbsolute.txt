@@ -12,3 +12,4 @@ C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\obj\Debu
 C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\obj\Debug\net8.0\advent-of-code-2024.pdb
 C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\obj\Debug\net8.0\advent-of-code-2024.genruntimeconfig.cache
 C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\obj\Debug\net8.0\ref\advent-of-code-2024.dll
+C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\obj\Debug\net8.0\advent-of-code-2024.sourcelink.json
