@@ -1,0 +1,14 @@
+C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\bin\Debug\net8.0\advent-of-code-2024.exe
+C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\bin\Debug\net8.0\advent-of-code-2024.deps.json
+C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\bin\Debug\net8.0\advent-of-code-2024.runtimeconfig.json
+C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\bin\Debug\net8.0\advent-of-code-2024.dll
+C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\bin\Debug\net8.0\advent-of-code-2024.pdb
+C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\obj\Debug\net8.0\advent-of-code-2024.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\obj\Debug\net8.0\advent-of-code-2024.AssemblyInfoInputs.cache
+C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\obj\Debug\net8.0\advent-of-code-2024.AssemblyInfo.cs
+C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\obj\Debug\net8.0\advent-of-code-2024.csproj.CoreCompileInputs.cache
+C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\obj\Debug\net8.0\advent-of-code-2024.dll
+C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\obj\Debug\net8.0\refint\advent-of-code-2024.dll
+C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\obj\Debug\net8.0\advent-of-code-2024.pdb
+C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\obj\Debug\net8.0\advent-of-code-2024.genruntimeconfig.cache
+C:\Users\dias01s\SafeDownloads\repos\advent-of-code\advent-of-code-2024\obj\Debug\net8.0\ref\advent-of-code-2024.dll

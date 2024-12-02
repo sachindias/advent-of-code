@@ -1,0 +1,72 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net8.0": []
+  },
+  "packageFolders": {
+    "C:\\Users\\dias01s\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\dias01s\\SafeDownloads\\repos\\advent-of-code\\advent-of-code-2024\\advent-of-code-2024.csproj",
+      "projectName": "advent-of-code-2024",
+      "projectPath": "C:\\Users\\dias01s\\SafeDownloads\\repos\\advent-of-code\\advent-of-code-2024\\advent-of-code-2024.csproj",
+      "packagesPath": "C:\\Users\\dias01s\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dias01s\\SafeDownloads\\repos\\advent-of-code\\advent-of-code-2024\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\dias01s\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Users\\dias01s\\.nuget\\PackageRepository": {},
+        "https://vpce-0e1122b3ad28fd3ff-lip45ns5.d.codeartifact.eu-west-1.vpce.amazonaws.com/nuget/d/shared-560442786884/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
