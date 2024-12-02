@@ -7,6 +7,11 @@ public class Program
     {
         
         //Day 1
-        D1_Tasks.Task1();
+        var (columnOne, columnTwo) = D1_Tasks.LoadData();
+        D1_Tasks.Task1(columnOne, columnTwo);
+        D1_Tasks.Task2(columnOne, columnTwo);
+        
+        //Day 2
+        
     }
 }
