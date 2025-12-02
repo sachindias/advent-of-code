@@ -1,7 +1,8 @@
-import { part1 } from "./day1/day1";
+import { part1, part2 } from "./day1/day1";
 
-function main() {
+async function main() {
   console.log("Advent of Code 2025 Solutions:\n");
-  part1("");
+  await part1("");
+  await part2("");
 }
 main();
