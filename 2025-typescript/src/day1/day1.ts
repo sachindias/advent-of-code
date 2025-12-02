@@ -1,6 +1,6 @@
 import { fileToArray } from "../utils";
 
-export const part1 = async (filename: string = ""): Promise<void> => {
+export const d1Part1 = async (filename: string = ""): Promise<void> => {
   const input = await fileToArray(1, filename);
 
   var position = 50;
@@ -44,7 +44,7 @@ export const part1 = async (filename: string = ""): Promise<void> => {
   console.log(`Day 1, Part 1 Solution: ${zeroCounter}`);
 };
 
-export const part2 = async (filename: string = ""): Promise<void> => {
+export const d1Part2 = async (filename: string = ""): Promise<void> => {
   const input = await fileToArray(1, filename);
 
   var position = 50;
