@@ -1,6 +1,6 @@
 import { d1Part1, d1Part2 } from "./day1/day1";
 import { d2Part1, d2Part2 } from "./day2/day2";
-import { d3Part1 } from "./day3/day3";
+import { d3Part1, d3Part2 } from "./day3/day3";
 
 async function main() {
   console.log("Advent of Code 2025 Solutions:\n");
@@ -13,5 +13,6 @@ async function main() {
 
   console.log("");
   await d3Part1("");
+  await d3Part2("");
 }
 main();
