@@ -36,8 +36,49 @@ export const d4Part1 = async (filename: string = ""): Promise<void> => {
 
 export const d4Part2 = async (filename: string = ""): Promise<void> => {
   const input = await fileToArray(4, filename);
+  var paperLocations: boolean[][] = [];
+  var paperValues = input.map((line) => line.split(""));
+  var totalWrappingPaper = 0;
+  var keepGoing = true;
 
-  console.log(`Day 4, Part 2 Solution: `);
+  const dimensions = {
+    rowLength: input.length,
+    columnLength: input[0].length,
+  };
+
+  while (keepGoing) {
+    paperLocations = paperValues.map((row) => row.map((char) => char === "@"));
+
+    var forklistAccessCount = 0;
+    var replaceLocations: { row: number; col: number }[] = [];
+
+    for (var row = 0; row < paperLocations.length; row++) {
+      for (var col = 0; col < paperLocations[row].length; col++) {
+        const currentPos = { row: row, col: col };
+        const hasAdjacentUnderFour = checkAdjacents(
+          paperLocations,
+          currentPos,
+          dimensions
+        );
+
+        if (hasAdjacentUnderFour) {
+          forklistAccessCount++;
+          replaceLocations.push(currentPos);
+        }
+      }
+    }
+
+    if (forklistAccessCount === 0) {
+      keepGoing = false;
+    } else {
+      totalWrappingPaper += forklistAccessCount;
+      for (const location of replaceLocations) {
+        paperValues[location.row][location.col] = ".";
+      }
+    }
+  }
+
+  console.log(`Day 4, Part 2 Solution: ${totalWrappingPaper}`);
 };
 
 const checkAdjacents = (
