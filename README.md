@@ -4,12 +4,12 @@ A repository for the code I write for Advent of Code
 
 ## Years Included
 
-- **2024** - C# (.NET 8.0) - [`2024-csharp/`](./2024-csharp/)
-    <span style="color:orange"> ★★★★★★☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆</span>
-    <span style="color:orange"> ★★★★★☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆</span>
-- **2025** - TypeScript - [`2025-typescript/`](./2025-typescript/)
-    <span style="color:orange"> ★★★★★☆☆☆☆☆☆☆</span>
-    <span style="color:orange"> ★★★★★☆☆☆☆☆☆☆</span>
+- **2024** - C# (.NET 8.0) - [`2024-csharp/`](./2024-csharp/)<br>
+    ★★★★★★☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆<br>
+    ★★★★★☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
+- **2025** - TypeScript - [`2025-typescript/`](./2025-typescript/)<br>
+    ★★★★★☆☆☆☆☆☆☆<br>
+    ★★★★★☆☆☆☆☆☆☆  
 
 See each folder's README for setup and usage instructions.
 
