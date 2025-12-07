@@ -4,7 +4,7 @@ import { d3Part1, d3Part2 } from "./day3/day3";
 import { d4Part1, d4Part2 } from "./day4/day4";
 import { d5Part1, d5Part2 } from "./day5/day5";
 import { d6Part1, d6Part2 } from "./day6/day6";
-import { d7Part1 } from "./day7/day7";
+import { d7Part1, d7Part2 } from "./day7/day7";
 
 async function main() {
   console.log("Advent of Code 2025 Solutions:\n");
@@ -33,5 +33,6 @@ async function main() {
 
   console.log("")
   await d7Part1("")
+  await d7Part2("")
 }
 main();
