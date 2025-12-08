@@ -42,7 +42,7 @@ export const d8Part2 = async (filename: string = ""): Promise<void> => {
 
   let connectionsArray = removeDistanceInfo(squareDistancesGrid);
 
-  const finalConnection = await logFinalConnection(
+  const finalConnection = logFinalConnection(
     connectionsArray,
     junctionBoxLocations
   );
@@ -155,16 +155,14 @@ const finishUp = (connectionsArray: number[][][]) => {
   return multiplier;
 };
 
-const logFinalConnection = async (
+const logFinalConnection = (
   connectionsArray: number[][][],
   junctionBoxLocations: number[][]
-): Promise<number[][]> => {
+): number[][] => {
   let curcuitConnectionsNeeded = 1;
-  let counter = -1;
   let lastValues: number[][] = [];
   while (curcuitConnectionsNeeded > 0) {
     connectionsArray = removeDuplicateLocations(connectionsArray);
-    counter++;
     if (connectionsArray[0].length === junctionBoxLocations.length) {
       break;
     }
