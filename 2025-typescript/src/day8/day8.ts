@@ -27,6 +27,30 @@ export const d8Part1 = async (
   console.log(`Day 8, Part 1 Solution: ${multiplier}`);
 };
 
+export const d8Part2 = async (filename: string = ""): Promise<void> => {
+  const input = await fileToArray(8, filename);
+  var junctionBoxLocations: number[][] = [];
+
+  for (const line of input) {
+    const individualChars = line.split(",");
+    const individualNumbers = individualChars.map((char) => Number(char));
+    junctionBoxLocations.push(individualNumbers);
+  }
+
+  let squareDistancesGrid = calculateSquareDistance(junctionBoxLocations);
+  squareDistancesGrid = preProcessSquareDistances(squareDistancesGrid);
+
+  let connectionsArray = removeDistanceInfo(squareDistancesGrid);
+
+  const finalConnection = await logFinalConnection(
+    connectionsArray,
+    junctionBoxLocations
+  );
+  const multiplierX = finalConnection[0][0] * finalConnection[1][0];
+
+  console.log(`Day 8, Part 2 Solution: ${multiplierX}`);
+};
+
 const calculateSquareDistance = (junctionBoxLocations: number[][]) => {
   let squareDistancesGrid: number[][][] = [];
 
@@ -58,14 +82,17 @@ const calculateSquareDistance = (junctionBoxLocations: number[][]) => {
 
 const preProcessSquareDistances = (
   squareDistancesGrid: number[][][],
-  connections: number
+  connections?: number
 ) => {
   squareDistancesGrid.sort((a, b) => a[1][0] - b[1][0]);
   squareDistancesGrid = squareDistancesGrid.filter(
     (item, index, arr) => index === 0 || item[1][0] !== arr[index - 1][1][0]
   );
 
-  squareDistancesGrid = squareDistancesGrid.slice(0, connections);
+  if (connections) {
+    squareDistancesGrid = squareDistancesGrid.slice(0, connections);
+  }
+
   return squareDistancesGrid;
 };
 
@@ -126,4 +153,57 @@ const finishUp = (connectionsArray: number[][][]) => {
     multiplier = multiplier * connectionsArray[i].length;
   }
   return multiplier;
+};
+
+const logFinalConnection = async (
+  connectionsArray: number[][][],
+  junctionBoxLocations: number[][]
+): Promise<number[][]> => {
+  let curcuitConnectionsNeeded = 1;
+  let counter = -1;
+  let lastValues: number[][] = [];
+  while (curcuitConnectionsNeeded > 0) {
+    connectionsArray = removeDuplicateLocations(connectionsArray);
+    counter++;
+    if (connectionsArray[0].length === junctionBoxLocations.length) {
+      break;
+    }
+
+    circuitCycle: for (let i = 0; i < connectionsArray.length; i++) {
+      for (let j = 0; j < connectionsArray.length; j++) {
+        if (i !== j) {
+          if (
+            connectionsArray[i].some((arr1) =>
+              connectionsArray[j].some(
+                (arr2) => arr1.join(",") === arr2.join(",")
+              )
+            )
+          ) {
+            let newConnectionArray = connectionsArray[i].concat(
+              connectionsArray[j]
+            );
+            lastValues = connectionsArray[j];
+            connectionsArray[i] = newConnectionArray;
+            curcuitConnectionsNeeded = 1;
+            connectionsArray.splice(j, 1);
+            break circuitCycle;
+          } else {
+            curcuitConnectionsNeeded = 0;
+          }
+        }
+      }
+    }
+  }
+  return lastValues;
+};
+
+const removeDuplicateLocations = (connectionsArray: number[][][]) => {
+  for (let i = 0; i < connectionsArray.length; i++) {
+    const duplicateStrings = connectionsArray[i].map((arr) => arr.join(","));
+    const uniqueStrings = new Set(duplicateStrings);
+    connectionsArray[i] = [...uniqueStrings].map((str) =>
+      str.split(",").map(Number)
+    );
+  }
+  return connectionsArray;
 };
