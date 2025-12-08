@@ -8,6 +8,7 @@ import { d7Part1, d7Part2 } from "./day7/day7";
 import { d8Part1, d8Part2 } from "./day8/day8";
 
 async function main() {
+  /*
   console.log("Advent of Code 2025 Solutions:\n");
   await d1Part1("");
   await d1Part2("");
@@ -37,7 +38,8 @@ async function main() {
   await d7Part2("")
 
   console.log("")
-  await d8Part1("Example", 10)
-  //await d8Part2("");
+  await d8Part1("", 1000)
+  await d8Part2("");
+  */
 }
 main();
