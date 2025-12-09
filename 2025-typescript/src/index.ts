@@ -6,7 +6,7 @@ import { d5Part1, d5Part2 } from "./day5/day5";
 import { d6Part1, d6Part2 } from "./day6/day6";
 import { d7Part1, d7Part2 } from "./day7/day7";
 import { d8Part1, d8Part2 } from "./day8/day8";
-import { d9Part1 } from "./day9/day9";
+import { d9Part1, d9Part2 } from "./day9/day9";
 
 async function main() {
   /*
@@ -41,9 +41,11 @@ async function main() {
   console.log("")
   await d8Part1("", 1000)
   await d8Part2("");
-  */
+  
 
   console.log("");
   await d9Part1("");
+  await d9Part2("");
+  */
 }
 main();
