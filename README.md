@@ -9,7 +9,7 @@ A repository for the code I write for Advent of Code
     ⭐ Part 2: ★★★★★☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ 5/25
 - **2025** - TypeScript - [`2025-typescript/`](./2025-typescript/)<br>
     ⭐ Part 1: ★★★★★★★★★☆☆☆ 9/12<br>
-    ⭐ Part 2: ★★★★★★★★☆☆☆☆ 8/12  
+    ⭐ Part 2: ★★★★★★★★★☆☆☆ 9/12  
 
 See each folder's README for setup and usage instructions.
 
