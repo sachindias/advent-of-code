@@ -1,4 +1,5 @@
 import { d1Part1, d1Part2 } from "./day1/day1";
+import { d10Part1, d10Part2 } from "./day10/day10";
 import { d2Part1, d2Part2 } from "./day2/day2";
 import { d3Part1, d3Part2 } from "./day3/day3";
 import { d4Part1, d4Part2 } from "./day4/day4";
@@ -47,5 +48,9 @@ async function main() {
   await d9Part1("");
   await d9Part2("");
   */
+
+  console.log("");
+  await d10Part1("");
+  await d10Part2("");
 }
 main();
